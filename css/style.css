@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* ================= NAvigation Part css ===================== */
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: all linear 0.3s;
+    position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #e84545;
+    transition: all linear 0.3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #e84545;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-light .navbar-nav .nav-item {
+    padding-left: 60px;
+}
+
+/* =============== Banner Part css ==================== */
+
+#_banner {
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 255px;
+    padding-bottom: 170px;
+    position: relative;
+}
+
+#_banner::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(43, 46, 74, 0.92);
+}
+
+.banner-text {
+    position: relative;
+    z-index: 99;
+}
+
+.banner-text h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    color: #ffffff;
+    padding-bottom: 25px;
+}
+
+.banner-text p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    color: #ffffff;
+    padding-bottom: 70px;
+}
+
+.banner-text a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 20px 54px;
+    border: 2px solid #e84545;
+    border-radius: 2px;
+    background: #e84545;
+
+}
+
+/* ================== Service Part css ====================== */
+
+#service {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.service-item i {
+    font-size: 60px;
+    color: #e84545;
+}
+
+.service-item h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #2d3033;
+    padding-top: 15px;
+}
+
+.service-item p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #6c7279;
+    padding: 0 12px;
+    padding-top: 8px;
+}
+
+/* =================== gallery Part css ===================== */
+
+.gal-main {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(212, 64, 64, 0.8);
+    opacity: 0;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.gal-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gal-text h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.gal-text p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+/* ===================== Team Part css ========================= */
+
+#team {
+    margin: 120px 0;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card {
+    border: none;
+}
+
+.card-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #2d3033;
+    padding-top: 25px;
+}
+
+.card-body h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #e84545;
+}
+
+.card-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #6c7279;
+    padding-bottom: 25px;
+}
+
+.social i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #e8ecee;
+    color: #c6cacc;
+    transition: all linear 0.3s;
+}
+
+.social i:hover {
+    color: #ffffff;
+    background: #6c7279;
+}
+
+/* ================ Testimonial Part css ===================== */
+
+#testimonial {
+    background: #53354a;
+}
+
+.testimonial-text p {
+    font-family: 'Cardo', serif;
+    font-size: 36px;
+    font-style: italic;
+    line-height: 42px;
+    color: #ffffff;
+    padding-top: 70px;
+}
+
+.testimonial-text h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* ================= Download Part css ======================== */
+
+#download {
+    padding: 120px;
+}
+
+.download-text h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #2d3033;
+    padding-bottom: 10px;
+}
+
+.download-text h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #2d3033;
+    padding-bottom: 30px;
+}
+
+.download-text a {
+    padding: 20px 80px;
+    border: 2px solid #e84545;
+    background: #e84545;
+    color: #ffffff;
+}
+
+/* ================== Address Part css ============= */
+
+#address {
+    background: #3a3e64;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.addr-heading h6 {
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.adrs{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-weight: 23px;
+    color: #c6cacc;
+}
+
+/* ================== Footer Part css ======================== */
+
+#footer{
+    background: #313454;
+}
+
+.footer-text{
+    padding-top: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-weight: 23px;
+    color: #77787b;
+    padding-bottom: 15px;
+}
+
+.heart{
+    color: red;
+}
+
+.author{
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -21,10 +21,26 @@ img {
     vertical-align: middle;
 }
 
+.back_to_top i {
+    width: 40px;
+    height: 40px;
+    background: #e84545;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+.back_to_top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    /* display: none; */
+}
+
 /* ================= NAvigation Part css ===================== */
 
 
 .navbar {
+    padding-top: 20px;
     position: fixed;
     width: 100%;
     z-index: 9999;
@@ -65,7 +81,7 @@ img {
 }
 
 .navbar-light .navbar-nav .nav-item {
-    padding-left: 60px;
+    padding-left: 30px;
 }
 
 /* =============== Banner Part css ==================== */
@@ -272,6 +288,36 @@ img {
     font-weight: 700;
     color: #ffffff;
 }
+
+
+.slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: -90px;
+    transform: translateX(-50%);
+}
+.slick-dots li {
+    width: 12px;
+    height: 12px;
+    background: #755d6e;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 8px;
+}
+.slick-dots li button{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    color: transparent;
+    border: 0;
+    opacity: 0;
+}
+
+.testimonial-slider li.slick-active button {
+    opacity: 1;
+}
+
 
 /* ================= Download Part css ======================== */
 
